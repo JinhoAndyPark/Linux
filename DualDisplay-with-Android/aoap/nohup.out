@@ -1,0 +1,33 @@
+starting accessory task
+Looking for device with VID 0x04e8
+accessory task finished
+starting accessory task
+Looking for device with VID 0x04e8
+accessory task finished
+starting accessory task
+Looking for device with VID 0x04e8
+accessory task finished
+starting accessory task
+Looking for device with VID 0x04e8
+compatible device found with VID 0x04e8
+device is not in accessory mode yet
+version is: 2
+device is in accessory mode
+Getting file descriptor
+reading from android
+Traceback (most recent call last):
+  File "accessory.py", line 186, in <module>
+    main()
+  File "accessory.py", line 31, in main
+    accessory_task()
+  File "accessory.py", line 114, in accessory_task
+    data = ep_in.read( size = 10, timeout = 0)
+  File "/usr/local/lib/python2.7/dist-packages/usb/core.py", line 300, in read
+    return self.device.read(self.bEndpointAddress, size, self.interface, timeout)
+  File "/usr/local/lib/python2.7/dist-packages/usb/core.py", line 670, in read
+    self.__get_timeout(timeout)
+  File "/usr/local/lib/python2.7/dist-packages/usb/backend/libusb1.py", line 780, in bulk_read
+    timeout)
+  File "/usr/local/lib/python2.7/dist-packages/usb/backend/libusb1.py", line 886, in __read
+    timeout)
+KeyboardInterrupt
